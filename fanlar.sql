@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2021 at 03:24 AM
+-- Generation Time: Jan 20, 2021 at 03:23 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -24,39 +24,32 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `markaz`
+-- Table structure for table `fanlar`
 --
 
-CREATE TABLE `markaz` (
+CREATE TABLE `fanlar` (
   `id` int(11) NOT NULL,
-  `ism` varchar(100) NOT NULL,
-  `tel` varchar(100) NOT NULL,
-  `fan` varchar(50) NOT NULL
+  `nom` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `markaz`
+-- Dumping data for table `fanlar`
 --
 
-INSERT INTO `markaz` (`id`, `ism`, `tel`, `fan`) VALUES
-(38, 'Azizbek', '901234567', 'web'),
-(39, 'Abbosxon', '912345678', 'web'),
-(40, 'Ilhom', '934567799', 'web'),
-(41, 'Ahmadjon', '99780199', 'python'),
-(42, 'Zohidjon', '994550955', 'react'),
-(44, 'Gulshoda', '903567898', 'android'),
-(45, 'Anora', '945678921', 'android'),
-(46, 'Jamshidbek', '902001999', 'react'),
-(48, 'Azimjon', '999073799', 'web');
+INSERT INTO `fanlar` (`id`, `nom`) VALUES
+(1, 'web'),
+(2, 'python'),
+(3, 'react'),
+(4, 'android');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `markaz`
+-- Indexes for table `fanlar`
 --
-ALTER TABLE `markaz`
+ALTER TABLE `fanlar`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -64,10 +57,10 @@ ALTER TABLE `markaz`
 --
 
 --
--- AUTO_INCREMENT for table `markaz`
+-- AUTO_INCREMENT for table `fanlar`
 --
-ALTER TABLE `markaz`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+ALTER TABLE `fanlar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

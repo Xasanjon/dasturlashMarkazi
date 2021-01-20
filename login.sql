@@ -24,39 +24,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `markaz`
+-- Table structure for table `login`
 --
 
-CREATE TABLE `markaz` (
+CREATE TABLE `login` (
   `id` int(11) NOT NULL,
-  `ism` varchar(100) NOT NULL,
-  `tel` varchar(100) NOT NULL,
-  `fan` varchar(50) NOT NULL
+  `login` varchar(100) NOT NULL,
+  `parol` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `markaz`
+-- Dumping data for table `login`
 --
 
-INSERT INTO `markaz` (`id`, `ism`, `tel`, `fan`) VALUES
-(38, 'Azizbek', '901234567', 'web'),
-(39, 'Abbosxon', '912345678', 'web'),
-(40, 'Ilhom', '934567799', 'web'),
-(41, 'Ahmadjon', '99780199', 'python'),
-(42, 'Zohidjon', '994550955', 'react'),
-(44, 'Gulshoda', '903567898', 'android'),
-(45, 'Anora', '945678921', 'android'),
-(46, 'Jamshidbek', '902001999', 'react'),
-(48, 'Azimjon', '999073799', 'web');
+INSERT INTO `login` (`id`, `login`, `parol`) VALUES
+(2, 'user', '123456');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `markaz`
+-- Indexes for table `login`
 --
-ALTER TABLE `markaz`
+ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -64,10 +55,10 @@ ALTER TABLE `markaz`
 --
 
 --
--- AUTO_INCREMENT for table `markaz`
+-- AUTO_INCREMENT for table `login`
 --
-ALTER TABLE `markaz`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+ALTER TABLE `login`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
